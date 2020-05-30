@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navbar from '../components/Navbar';
+import Link from 'next/link';
 
 const Index = () => {
   return (
     <div>
-      <Nav>
-        <LogoText>New Release</LogoText>
-      </Nav>
+      <Navbar />
       <Container>
         <Card>
           <CardImageContainer>
@@ -23,6 +23,7 @@ const Index = () => {
             American and Pacific Islander Heritage Month (AAPIHM) campaign.
           </CardParagraph>
         </Card>
+
         <Card>
           <CardImageContainer>
             <Image src="/MinImage.png" alt="" />
@@ -42,19 +43,6 @@ const Index = () => {
     </div>
   );
 };
-
-const Nav = styled.nav`
-  height: 64;
-  background-color: #fff;
-  padding: 16px 20px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 24px;
-`;
-
-const LogoText = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
-`;
 
 const Container = styled.div`
   padding: 0 16px;
